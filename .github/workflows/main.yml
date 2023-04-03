@@ -1,1 +1,23 @@
+name: CIU
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  biuld:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo Hello World!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actiions to biuld,
+          echo test, and deploty your project. 
 
